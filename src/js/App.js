@@ -14,16 +14,12 @@ export default function App() {
 
 	return (
 		<div className="app__container">
-			<Buttons 
-				lightsData={lightsData}
-				setLightsData={setLightsData}
-			/>
-           
+			<Buttons lightsData={lightsData} setLightsData={setLightsData} />
+
 			<TrafficLight
 				lightsData={lightsData}
 				setLightsData={setLightsData}
 			/>
-			
 		</div>
 	);
 }

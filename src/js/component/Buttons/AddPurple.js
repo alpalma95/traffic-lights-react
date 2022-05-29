@@ -1,7 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const AddPurple = ({ lightsData, setLightsData, displayAdd }) => {
-	
 	const [disabled, setDisabled] = useState(false);
 
 	const addDataHandler = () => {
@@ -15,7 +14,10 @@ const AddPurple = ({ lightsData, setLightsData, displayAdd }) => {
 	return (
 		<div>
 			{!displayAdd ? null : (
-				<button className="add-btn" disabled={disabled} onClick={addDataHandler}>
+				<button
+					className="add-btn"
+					disabled={disabled}
+					onClick={addDataHandler}>
 					Add a purple bulb
 				</button>
 			)}
