@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import TrafficLight from "./component/TrafficLight";
-import AddPurple from "./component/AddPurple";
-
+import Buttons from "./component/Buttons/Buttons";
 export default function App() {
 	const [lightsData, setLightsData] = useState([
 		{
@@ -15,11 +14,16 @@ export default function App() {
 
 	return (
 		<div className="app__container">
+			<Buttons 
+				lightsData={lightsData}
+				setLightsData={setLightsData}
+			/>
+           
 			<TrafficLight
 				lightsData={lightsData}
 				setLightsData={setLightsData}
 			/>
-			<AddPurple lightsData={lightsData} setLightsData={setLightsData} />
+			
 		</div>
 	);
 }
