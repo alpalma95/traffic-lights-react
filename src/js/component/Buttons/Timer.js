@@ -29,7 +29,7 @@ const Timer = ({lightsData, setLightsData, setDisplayAdd}) => {
             setDisplayAdd(false)
             setBtnContent('Stop');
             
-        } else if (lightsData.some(x => x.color != "purple")) {
+        } else {
             setAutomatic(false)
             setDisplayAdd(true)
             setBtnContent('Switch automatically')
@@ -40,7 +40,7 @@ const Timer = ({lightsData, setLightsData, setDisplayAdd}) => {
         if (automatic){
             let automaticInterval = setInterval(switchAutomatically, 3000);
 
-            return ()=> clearInterval(automaticInterval);
+            return () => clearInterval(automaticInterval);
         }
         
     }, [automatic])
