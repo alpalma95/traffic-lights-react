@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TrafficLight from "./component/TrafficLight";
+import TrafficLight from "./component/TrafficLights/TrafficLight";
 import Buttons from "./component/Buttons/Buttons";
 export default function App() {
 	const [lightsData, setLightsData] = useState([

@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import AddPurple from "./AddPurple";
 import Timer from "./Timer";
+import "./Buttons.css";
 
 const Buttons = ({lightsData, setLightsData}) =>{
     const [displayAdd, setDisplayAdd] = useState(true);
-    // const [displayTimer, setDisplayTimer] = useState(true);
 
     return (
         <div className="btn__container">
@@ -12,12 +12,10 @@ const Buttons = ({lightsData, setLightsData}) =>{
                 lightsData={lightsData}
                 setLightsData={setLightsData}
                 displayAdd={displayAdd}
-                setDisplayAdd={setDisplayAdd}
             />
             <Timer 
                 lightsData={lightsData}
                 setLightsData={setLightsData}
-                displayAdd={displayAdd}
                 setDisplayAdd={setDisplayAdd}           
             />
         </div>
