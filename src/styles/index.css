@@ -26,7 +26,12 @@ button {
   border-radius: 10px;
 }
 
-button:hover {
+button:disabled {
+  opacity: 0.5;
+}
+
+
+button:enabled:hover {
   color: white;
   background-color: purple;
 }

@@ -29,7 +29,7 @@ const Timer = ({lightsData, setLightsData, setDisplayAdd}) => {
             setDisplayAdd(false)
             setBtnContent('Stop');
             
-        } else {
+        } else if (lightsData.some(x => x.color != "purple")) {
             setAutomatic(false)
             setDisplayAdd(true)
             setBtnContent('Switch automatically')
