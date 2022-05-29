@@ -8,11 +8,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
 		"start": "webpack-dev-server --mode development",
 		"build": "webpack --mode development",
-		"deploy:github": "node deploy-to-github.js"
 	},
 	"author": "Alejandro Sanchez",
 	"license": "ISC",
